@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ecf0f1">
+
+
+    <TextView
+        android:text="Kullanıcı ismi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editName"
+        android:textStyle="bold|italic"
+        android:hint="Kullanıcı İsmini Giriniz"
+        android:gravity="center_vertical|center"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="Şifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView2"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:hint="Şifreyi Giriniz"
+        android:layout_below="@+id/editName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewdata"
+        android:background="@drawable/button_style"
+        android:text="Verileri Gör"
+        android:textColor="#ecf0f1"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/editText3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"/>
+
+    <Button
+        android:text="Kullanıcı Ekleyiniz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:background="@drawable/button_style"
+        android:onClick="addUser"
+        android:textColor="#ecf0f1"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_below="@+id/editPass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="update"
+        android:text="Güncelle"
+        android:textColor="#ecf0f1"
+        android:background="@drawable/button_style"
+        android:textStyle="normal|bold"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_below="@+id/editText3"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button4"
+        android:ems="10"
+        android:freezesText="false"
+        android:hint="Sileceğiniz veriyi girin "
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:text="sil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:id="@+id/button4"
+        android:onClick="delete"
+        android:textColor="#ecf0f1"
+        android:background="@drawable/button_style"
+        android:textStyle="normal|bold"
+        tools:ignore="RelativeOverlap"
+        android:layout_marginBottom="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="Mevcut İsim"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editPass"
+        android:hint="Şifreyi Giriniz"
+        android:gravity="center_vertical|center"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_alignTop="@+id/button3"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Yeni İsim"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"/>
+</RelativeLayout>
